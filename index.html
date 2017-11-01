@@ -4,6 +4,8 @@
 
         <link rel = "stylesheet" type= "text/css" href = "styles.css">
         <link href="https://fonts.googleapis.com/css?family=Roboto+Mono|Rubik" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+              rel="stylesheet">
         <title> Pick Your Table </title>
     </head>
 <body>
@@ -12,25 +14,63 @@
    <p>Pick your table now</p> </div>
 
  <div id="floorplan">
-   <div  class="table available">1</div>
-  <div class="table available">2</div>
-  <div class="table available">3</div>
-  <div class="table available">4</div>
- <div class="table available">5</div>
- <div class="table available">6</div>
- <div class="table available">7</div>
-<div class="table available">8</div>
-<div class="table available">9</div>
+   <div class="table available" data-tablenum=“1” >1</div>
+            <div class= "hoverbox" id="reserved1">
+                <div class="name_info"> Name: </div>
+                <div class="party_info"> Size of party: </div>
+              </div>
+  <div data-tablenum=“2” class="table available">2</div>
+            <div class= "hoverbox" id="reserved2">
+                <div class="name_info"> Name: </div>
+                <div class="party_info"> Size of party: </div>
+              </div>
+  <div data-tablenum=“3” class="table available">3</div>
+            <div class= "hoverbox" id="reserved3">
+                <div class="name_info"> Name: </div>
+                <div class="party_info"> Size of party: </div>
+              </div>
+  <div data-tablenum=“4” class="table available">4</div>
+            <div class= "hoverbox" id="reserved4">
+              <div class="name_info"> Name: </div>
+              <div class="party_info"> Size of party: </div>
+            </div>
+ <div data-tablenum=“5” class="table available">5</div>
+            <div class= "hoverbox" id="reserved5">
+              <div class="name_info"> Name: </div>
+              <div class="party_info"> Size of party: </div>
+            </div>
+ <div data-tablenum=“6” class="table available">6</div>
+          <div class= "hoverbox" id="reserved6">
+              <div class="name_info"> Name: </div>
+              <div class="party_info"> Size of party: </div>
+            </div>
+ <div data-tablenum=“7” class="table available">7</div>
+            <div class= "hoverbox"  id="reserved7">
+                <div class="name_info"> Name: </div>
+                <div class="party_info"> Size of party: </div>
+            </div>
+<div data-tablenum=“8” class="table available">8</div>
+          <div class= "hoverbox" id="reserved8">
+              <div class="name_info"> Name: </div>
+              <div class="party_info"> Size of party: </div>
+            </div>
+<div data-tablenum=“9” class="table available">9</div>
+          <div class= "hoverbox" id="reserved9">
+            <div class="name_info"> Name: </div>
+            <div class="party_info"> Size of party: </div>
+          </div>
  </div>
 
+
  <div id="form">
+   <i class="material-icons">close</i>
    <h3> New Reservation </h3>
    <p> Table Number xxx </p>
    <form>
-  <input type="text" name="firstname" placeholder= "Yasmine"><br>
-  <input type="text" name="lastname" placeholder= "248-222-2222"><br>
-  <input type="text" name="lastname" placeholder= "10"><br>
-  <input class="button" type="submit" value="save">
+  <input type="text" id="firstname" name="firstname" placeholder= "Yasmine"><br>
+  <input type="text" id="phone" name="lastname" placeholder= "248-222-2222"><br>
+  <input type="text" id="party number" name="party number" placeholder= "10"><br>
+  <input class="button" id="save" type="submit" value="save">
 </form>
  </div>
 
